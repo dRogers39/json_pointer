@@ -69,3 +69,10 @@ to write to.
 
 Python 3.8+. Standard library only. Tested with `python -m unittest discover
 -s tests` and `PYTHONPATH=src`.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
