@@ -1,6 +1,6 @@
 [project]
 name = "json-pointer"
-version = "0.1.0"
+version = "0.1.1"
 description = "Resolve and apply RFC 6901 JSON Pointers."
 requires-python = ">=3.10"
 dependencies = []
